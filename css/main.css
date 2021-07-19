@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+html,body{
+  margin: 0 !important;
+  padding: 0 !important;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: #383838;
+}
+::selection{
+  color: #848484;
+  background: #313030;
+}
+.wheat{
+  color: wheat;
+}
+ul li{
+  text-align: left !important;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+}
