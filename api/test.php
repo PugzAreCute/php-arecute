@@ -14,7 +14,7 @@
     <meta property="og:description" content="Hello there!, I am PugzAreCute, its nice to meet you :)">
     <meta property="og:image" content="">
     <meta name="theme-color" content="#9a67c7">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
