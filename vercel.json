@@ -4,7 +4,8 @@
       "runtime": "vercel-php@0.4.0"
     }},
     "routes": [
-      { "src": "/",  "dest": "api/index.php" }
+      { "src": "/",  "dest": "api/index.php" },
+      { "src": "/embedgen",  "dest": "api/embedgen.php" }
     ]
 
 }

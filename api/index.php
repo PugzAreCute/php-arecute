@@ -18,8 +18,7 @@
 
 <body>
 <div id="cyan">
-    <?php echo($_GET["title"])
-    ?>
+    <h1>PugzAreCite</h1>
     <h2>I Like dogs & Java.</h2>
     <h2>Importaint notice: Github will flag a lot of commits as unverified as i have changed my username, dont worry about that.</h2>
     <h2>Here are some links:</h2>
