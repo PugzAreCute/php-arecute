@@ -7,6 +7,6 @@
     echo "<meta property=\"og:url\" content=\"".$_GET["url"]."\">";
     echo "<meta property=\"og:description\" content=\"".$_GET["description"]."\">";
     echo "<meta property=\"og:image\" content=\"".$_GET["image"]."\">";
-    echo "<meta name=\"theme-color\" content=\"".$_GET["color"]."\">";
+    echo "<meta name=\"theme-color\" content=\"#".$_GET["color"]."\">";
     echo "</head>";
 
