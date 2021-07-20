@@ -21,6 +21,7 @@
     <h1>PugzAreCute</h1>
     <h2>I Like dogs & Java.</h2>
     <h2>Importaint notice: Github will flag a lot of commits as unverified as i have changed my username, dont worry about that.</h2>
+    <h2>Contact me <a href="/contact">here</a></h2>
     <h2>Here are some links:</h2>
     <ul>
         <li><a href="https://github.com/PugzAreCute">My GitHub</a></li>
