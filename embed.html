@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>PugzAreCute Embed Generator</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forum.css">
 </head>
 <body>
 <form action="/embedgen" method="get">
-    <label for="title">Title: </label>
+    <pre><label for="title">Title: </label></pre>
     <input id="title" type="text" name="title">
-    <label for="description">Description: </label>
-    <input id="description" type="text" name="description">
-    <label for="url">URL: </label>
+    <pre><label for="description">Description: </label></pre>
+    <textarea id="description" type="text" name="description"></textarea>
+    <pre><label for="url">URL: </label></pre>
     <input id="url" type="text" name="url">
-    <label for="image">Image: </label>
+    <pre><label for="image">Image: </label></pre>
     <input id="image" type="text" name="image">
-    <label for="color">Color in hex (W/O #): </label>
+    <pre><label for="video">Video: </label></pre>
+    <input id="video" type="text" name="video">
+    <pre><label for="color">Color in hex (W/O #): </label></pre>
     <input id="color" type="text" name="color">
     <input type="submit">
 </form>

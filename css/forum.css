@@ -1,0 +1,19 @@
+input{
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    margin: 5px;
+    background-color: #666666;
+}
+textarea{
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    background-color: #666666;
+}
+input[type=submit]{
+    background-color: #7f9bff;
+    width: 10% !important;
+}
