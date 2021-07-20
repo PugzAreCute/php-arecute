@@ -1,6 +1,6 @@
+<head xmlns="http://www.w3.org/1999/html">
+    <link href='../css/main.css' rel='stylesheet'>
 <?php
-    echo "<head>";
-    echo "<link href='../css/main.css' rel='stylesheet'>";
     echo "<meta name=\"description\" content=\"".$_GET["description"]."\">";
     echo "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
     echo "<meta property=\"og:title\" content=\"".$_GET["title"]."\">";
@@ -13,8 +13,13 @@
     echo "<meta name=\"og:video\" content=\"".$_GET["video"]."\">";
     echo "<meta name=\"og:video:secure_url\" content=\"".$_GET["video"]."\">";
     echo "<meta name=\"og:video:type\" content=\"video/mp4\">";
-echo "<meta property=\"og:video:width\" content=\"400\" />";
-echo "<meta property=\"og:video:height\" content=\"300\" />";
+    echo "<meta property=\"og:video:width\" content=\"400\" />";
+    echo "<meta property=\"og:video:height\" content=\"300\" />";
     echo "</head>";
-    echo "<body><h1> Paste "."https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']." In your favourate chat app that supports OG to preview this embed</h1></body>";
 
+    $URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+    echo "<body><h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
+    echo "<button onclick=\"copyToClipboard('".$URL."')\">Copy text</button></body>"
+    ?>
+<script src="../js/utils.js"></script>
