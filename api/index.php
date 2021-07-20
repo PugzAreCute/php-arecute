@@ -23,7 +23,7 @@
     <h2>Importaint notice: Github will flag a lot of commits as unverified as i have changed my username, dont worry about that.</h2>
     <h2>Here are some links:</h2>
     <ul>
-        <li><a href="https://github.com/PutoPug">My GitHub</a></li>
+        <li><a href="https://github.com/PugzAreCute">My GitHub</a></li>
         <li><a href="https://keybase.io/pugzarecute">Keybase</a></li>
         <li><a href="https://discord.gg/geNRqMu5XW">My Discord</a></li>
         <li><a href="https://www.curseforge.com/members/pugzarecute_/projects">My Curseforge Profile</a></li>
