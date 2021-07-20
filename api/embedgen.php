@@ -9,7 +9,7 @@
     echo "<meta property=\"og:description\" content=\"".$_GET["description"]."\">";
     echo "<meta property=\"og:image\" content=\"".$_GET["image"]."\">";
     echo "<meta name=\"theme-color\" content=\"#".$_GET["color"]."\">";
-    echo "<meta name=\"og:video\" content=\"#".$_GET["color"]."\">";
+    echo "<meta name=\"og:video\" content=\"".$_GET["video"]."\">";
     echo "</head>";
     echo "<body><h1> Paste "."https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']." In your favourate chat app that supports OG to preview this embed</h1></body>";
 
