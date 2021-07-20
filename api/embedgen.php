@@ -13,6 +13,8 @@
     echo "<meta name=\"og:video\" content=\"".$_GET["video"]."\">";
     echo "<meta name=\"og:video:secure_url\" content=\"".$_GET["video"]."\">";
     echo "<meta name=\"og:video:type\" content=\"video/mp4\">";
+echo "<meta property=\"og:video:width\" content=\"400\" />";
+echo "<meta property=\"og:video:height\" content=\"300\" />";
     echo "</head>";
     echo "<body><h1> Paste "."https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']." In your favourate chat app that supports OG to preview this embed</h1></body>";
 
