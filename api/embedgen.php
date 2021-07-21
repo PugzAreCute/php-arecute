@@ -27,6 +27,6 @@
   <li><a href="/iputils">IP Utilities</a></li>
 </ul>';
     echo "<h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
-    echo "<button onclick=\"copyToClipboard('".$URL."')\">Copy text</button></body>"
+    echo "<button onclick=\"copyToClipboard('".$URL."')\">Copy text</button>".'<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg"></a>'."</body>"
     ?>
 <script src="../js/utils.js"></script>
