@@ -19,7 +19,14 @@
 
     $URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
-    echo "<body><h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
+    echo "<body>";
+    echo '<ul id="nav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="embed.html">Discord embed generator</a></li>
+  <li><a href="/iputils">IP Utilities</a></li>
+</ul>';
+    echo "<h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
     echo "<button onclick=\"copyToClipboard('".$URL."')\">Copy text</button></body>"
     ?>
 <script src="../js/utils.js"></script>
