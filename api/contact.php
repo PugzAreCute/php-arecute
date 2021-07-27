@@ -13,7 +13,6 @@
     <li><a href="/">Home</a></li>
     <li><a href="/contact">Contact</a></li>
     <li><a href="embed.html">Discord embed generator</a></li>
-    <li><a href="/iputils">IP Utilities</a></li>
 </ul>
 <h1>Ways to contact me:</h1>
 <h2>Option A: My discord (<a href="https://discord.gg/geNRqMu5XW">https://discord.gg/geNRqMu5XW</a>)</h2>

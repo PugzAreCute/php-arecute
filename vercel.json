@@ -5,8 +5,7 @@
     }},
     "routes": [
       { "src": "/embedgen",  "dest": "api/embedgen.php" },
-      { "src": "/contact",  "dest": "api/contact.php" },
-      {"src": "/iputils" , "dest" :  "api/iputils.php"}
+      { "src": "/contact",  "dest": "api/contact.php" }
     ]
 
 }
