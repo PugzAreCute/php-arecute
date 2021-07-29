@@ -1,4 +1,4 @@
-//Copy code
+//Code to copy stuff to clipboard
 function copyToClipboard(text) {
     const elem = document.createElement('textarea');
     elem.value = text;
