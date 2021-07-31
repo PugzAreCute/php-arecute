@@ -5,7 +5,8 @@
     }},
     "routes": [
       { "src": "/embedgen",  "dest": "api/embedgen.php" },
-      { "src": "/contact",  "dest": "api/contact.php" }
+      { "src": "/contact",  "dest": "api/contact.php" },
+      { "src": "/(.*)", "status": 404, "dest": "404.html" }
     ]
 
 }
