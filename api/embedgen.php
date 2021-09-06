@@ -42,10 +42,8 @@
 
     setTimeout(function () {
         <?php
-        if(!isset($_GET['dnr'])) {
-            echo 'window.location.replace("'.$_GET("url").'")';
-        }else{
-            echo 'console.log("Initial request, not redirecting")';
+        if(! isset($_GET["dnr"])){
+        echo "location.replace('".$_GET['url']."')";
         }
         ?>
     }, 200);
