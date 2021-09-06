@@ -12,11 +12,11 @@
     <li><a href="/contact">Contact</a></li>
     <li><a href="embed.html">Discord embed generator</a></li>
 </ul>
-<form action="/embedgen" method="get">
+<form action="api/embedgen.php" method="get" id="form" onsubmit="processFormData()">
     <pre><label for="title">Title: </label></pre>
     <input id="title" type="text" name="title">
     <pre><label for="description">Description: </label></pre>
-    <textarea id="description" type="text" name="description"></textarea>
+    <textarea id="description" name="description"></textarea>
     <pre><label for="url">URL: </label></pre>
     <input id="url" type="text" name="url">
     <pre><label for="image">Image: </label></pre>
@@ -25,6 +25,7 @@
     <input id="video" type="text" name="video">
     <pre><label for="color">Color in hex (W/O #): </label></pre>
     <input id="color" type="text" name="color">
+    <input type="hidden" name="dnr" value="true">
     <input type="submit">
 </form>
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="powered-by-vercel.svg"></a>

@@ -25,10 +25,29 @@
 </ul>
 <?php
     $URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    $RUI = $_SERVER['REQUEST_URI'];
+    $URL = preg_replace("/&dnr=true/i", "", $URL);
+    echo $URL;
     echo "<h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
-    echo '<button onclick="copyToClipboard(\''.$URL.'\')">Copy text</button>'
+    echo '<button onclick="copyToClipboard(\''.$URL.'\')">Copy text</button>';
 ?>
 <br>
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg" alt="Powered by vercel"></a>
-<script src="../js/utils.js"></script>
+<script src="../js/utils.js">
+</script>
+<script>
+    <?php
+    echo 'window.history.pushState("","","'.$RUI.'")'
+    ?>
+
+    setTimeout(function () {
+        <?php
+        if(!isset($_GET['dnr'])) {
+            echo 'window.location.replace("'.$_GET("url").'")';
+        }else{
+            echo 'console.log("Initial request, not redirecting")';
+        }
+        ?>
+    }, 200);
+</script>
 </body>
