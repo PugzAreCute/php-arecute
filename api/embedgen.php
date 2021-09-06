@@ -13,19 +13,21 @@
     echo "<meta name=\"og:video\" content=\"".$_GET["video"]."\">";
     echo "<meta name=\"og:video:secure_url\" content=\"".$_GET["video"]."\">";
     echo "<meta name=\"og:video:type\" content=\"video/mp4\">";
-    echo "<meta property=\"og:video:width\" content=\"400\" />";
-    echo "<meta property=\"og:video:height\" content=\"300\" />";
-    echo "</head>";
-
+    echo "<meta property=\"og:video:width\" content=\"1920\"/>";
+    echo "<meta property=\"og:video:height\" content=\"1080\"/>";
+?>
+</head>
+<body>
+<ul id="nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="embed.html">Discord embed generator</a></li>
+</ul>
+<?php
     $URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
-    echo "<body>";
-    echo '<ul id="nav">
-  <li><a href="/">Home</a></li>
-  <li><a href="/contact">Contact</a></li>
-  <li><a href="embed.html">Discord embed generator</a></li>
-</ul>';
     echo "<h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
-    echo "<button onclick=\"copyToClipboard('".$URL."')\">Copy text</button>".'<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg"></a>'."</body>"
-    ?>
+    echo '<button onclick="copyToClipboard(\''.$URL.'\')">Copy text</button>'
+?>
+<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg" alt="Powered by vercel"></a>
 <script src="../js/utils.js"></script>
+</body>
