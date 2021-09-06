@@ -26,7 +26,7 @@
 <?php
     $URLFORREDIRECT= $_GET['url'];
     $URL = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-    $RUI = $_SERVER['REQUEST_URI'];
+    $RUI = preg_replace("/&dnr=true/i", "", $_SERVER['REQUEST_URI']);
     $URL = preg_replace("/&dnr=true/i", "", $URL);
     echo $URLFORREDIRECT;
     echo "<h1 id='t2c'> Paste ".$URL." In your favourite chat app that supports OG to preview this embed</h1>";
