@@ -33,8 +33,7 @@
 ?>
 <br>
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg" alt="Powered by vercel"></a>
-<script src="../js/utils.js">
-</script>
+<script src="../js/utils.js"></script>
 <script>
     <?php
     echo 'window.history.pushState("","","'.$RUI.'")'
@@ -42,7 +41,7 @@
 
     setTimeout(function () {
         <?php
-        if(! isset($_GET["dnr"])){
+        if(! isset($_GET["dnr"]) && isset($_GET['url']) &&  !empty($_GET['url'])){
             echo "location.replace('".$URLFORREDIRECT."')";
         }
         ?>
