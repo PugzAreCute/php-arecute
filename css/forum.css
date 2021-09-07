@@ -17,3 +17,15 @@ input[type=submit]{
     background-color: #7f9bff;
     width: 10% !important;
 }
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
