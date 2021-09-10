@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"></meta>
     <title>Contact me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     <link href="../css/main.css" rel="stylesheet"></link>
