@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Contact me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link href="../css/main.css" rel="stylesheet"></link>
 </head>
 
 <body>
