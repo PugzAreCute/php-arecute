@@ -1,62 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
-html,body{
-  margin: 0 !important;
-  padding: 0 !important;
-  color: white;
-  height: 100%;
-  width: 100%;
-  background-color: #383838;
-  overflow-wrap: anywhere;
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: #383838;
+    overflow-wrap: anywhere;
 }
-::selection{
-  color: #848484;
-  background: #313030;
+
+::selection {
+    color: #848484;
+    background: #313030;
 }
-.wheat{
-  color: wheat;
+
+.wheat {
+    color: wheat;
 }
-ul li{
-  text-align: left !important;
+
+ul li {
+    text-align: left !important;
 }
-ul li a{
-  text-decoration: none;
-  color: white;
+
+ul li a {
+    text-decoration: none;
+    color: white;
 }
-button{
-  width: 20%;
-  height: 15%;
-  background-color: darkslategray;
-  border: 1px solid #ff545b;
-  border-radius: 10px;
+
+button {
+    width: 20%;
+    height: 15%;
+    background-color: darkslategray;
+    border: 1px solid #ff545b;
+    border-radius: 10px;
 }
-.hidden_link{
-  text-decoration: none;
-  color: white;
+
+.hidden_link {
+    text-decoration: none;
+    color: white;
 }
+
 #nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #020101;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #020101;
 }
 
 li {
-  float: left;
+    float: left;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+    background-color: #111;
 }
