@@ -2,12 +2,24 @@
   "functions": {
     "api/*.php": {
       "runtime": "vercel-php@0.4.0"
-    }},
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/embedgen",  "dest": "api/embedgen.php" },
-      { "src": "/contact",  "dest": "api/contact.php" },
-      { "src": "/(.*)", "status": 404, "dest": "404.html" }
-    ]
-
+    }
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/embedgen",
+      "dest": "api/embedgen.php"
+    },
+    {
+      "src": "/contact",
+      "dest": "api/contact.php"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "404.html"
+    }
+  ]
 }
