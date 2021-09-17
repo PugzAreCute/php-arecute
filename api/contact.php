@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"></meta>
     <title>Contact me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link href="../css/main.css" rel="stylesheet"></link>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 <h2>Option A: My discord (<a href="https://discord.gg/geNRqMu5XW">https://discord.gg/geNRqMu5XW</a>)</h2>
 <h2>Option B: Email (<a class="hidden_link" href="mailto:me@pugzarecute.com">me@pugzarecute.com</a>)</h2>
 
-<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg"></a>
+<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg"></img></a>
 </body>
 
 </html>
