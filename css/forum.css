@@ -1,4 +1,4 @@
-input{
+input {
     border: 1px solid rebeccapurple;
     border-radius: 10px;
     width: 95%;
@@ -6,26 +6,29 @@ input{
     margin: 5px;
     background-color: #666666;
 }
-textarea{
+
+textarea {
     border: 1px solid rebeccapurple;
     border-radius: 10px;
     width: 95%;
     padding: 10px;
     background-color: #666666;
 }
-input[type=submit]{
+
+input[type=submit] {
     background-color: #7f9bff;
     width: 10% !important;
 }
+
 ::placeholder {
-  color: white;
-  opacity: 1;
+    color: white;
+    opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: white;
+    color: white;
 }
 
 ::-ms-input-placeholder {
-  color: white;
+    color: white;
 }
