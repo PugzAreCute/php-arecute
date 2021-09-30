@@ -32,7 +32,7 @@ echo "<h1 id='t2c'> Paste " . $URL . " In your favourite chat app that supports 
 echo '<button onclick="copyToClipboard(\'' . $URL . '\')">Copy text</button>';
 ?>
 <br>
-<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../powered-by-vercel.svg"
+<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../img/powered-by-vercel.svg"
                                                                         alt="Powered by vercel"></a>
 <script src="../js/utils.js"></script>
 <script>
