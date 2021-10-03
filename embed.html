@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>PugzAreCute Embed Generator</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/forum.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/forum.css" rel="stylesheet">
 </head>
 <body>
 <ul id="nav">
@@ -12,23 +12,23 @@
     <li><a href="/contact">Contact</a></li>
     <li><a href="embed.html">Discord embed generator</a></li>
 </ul>
-<form action="embedgen" method="get" id="form">
+<form action="embedgen" id="form" method="get">
     <pre><label for="title">Title: </label></pre>
-    <input id="title" type="text" name="title" placeholder="Test">
+    <input id="title" name="title" placeholder="Test" type="text">
     <pre><label for="description">Description: </label></pre>
     <textarea id="description" name="description" placeholder="Lorem ipsum dolor sit amet."></textarea>
     <pre><label for="url">URL: </label></pre>
-    <input id="url" type="text" name="url" placeholder="https://google.com/">
+    <input id="url" name="url" placeholder="https://google.com/" type="text">
     <pre><label for="image">Image: </label></pre>
-    <input id="image" type="text" name="image" placeholder="https://example.com/example.png">
+    <input id="image" name="image" placeholder="https://example.com/example.png" type="text">
     <pre><label for="video">Video: </label></pre>
-    <input id="video" type="text" name="video" placeholder="https://example.com/test.mp4">
+    <input id="video" name="video" placeholder="https://example.com/test.mp4" type="text">
     <pre><label for="color">Color in hex (W/O #): </label></pre>
-    <input id="color" type="text" name="color" placeholder="ff0000">
-    <input type="hidden" name="dnr" value="true">
+    <input id="color" name="color" placeholder="ff0000" type="text">
+    <input name="dnr" type="hidden" value="true">
     <input type="submit">
 </form>
-<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="img/Vercel.svg"
-                                                                        alt="Powered By Vercel!"></a>
+<a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img alt="Powered By Vercel!"
+                                                                        src="img/Vercel.svg"></a>
 </body>
 </html>
