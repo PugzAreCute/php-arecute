@@ -69,3 +69,10 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+code{
+    background-color: #2a2a2a !important;
+    border-radius: 4px;
+    padding: 1px;
+    border: 1px solid #151515;
+}
