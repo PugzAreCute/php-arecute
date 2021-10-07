@@ -15,10 +15,11 @@
     $cmds = <<<EOF
 CREATE TABLE  IF NOT EXISTS LINKS(
     LINK varchar(1024),
-    REMOTE varchar(8192)
+    REMOTE varchar(8192),
+    UNIQUE(LINK,REMOTE)
 )
 EOF;
-    $database->exec($cmds)
+    $database->exec($cmds);
     function processData($linkIn,$remoteIn){
         $database = new DataMan();
         $cmds = <<<EOF
