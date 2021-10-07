@@ -1,10 +1,6 @@
 <?php
 
 $database = new SQLite3('/tmp/db.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
-if (!$database) {
-    echo $database->lastErrorMsg();
-} else {
-    echo "Opened database successfully\n";
 }
 
 $cmds = <<<EOF
