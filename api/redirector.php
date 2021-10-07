@@ -18,3 +18,6 @@ CREATE TABLE  IF NOT EXISTS LINKS(
     REMOTE varchar(8192)
 )
 EOF;
+    $database->exec($cmds)
+    function processData(){
+    }
