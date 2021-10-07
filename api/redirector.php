@@ -1,12 +1,5 @@
 <?php
 
-class DataMan extends SQLite3
-{
-    function __construct()
-    {
-        $this->open("test.db");
-    }
-}
 
 $database = new DataMan();
 if (!$database) {
