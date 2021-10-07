@@ -19,5 +19,12 @@ CREATE TABLE  IF NOT EXISTS LINKS(
 )
 EOF;
     $database->exec($cmds)
-    function processData(){
+    function processData($linkIn,$remoteIn){
+        $database = new DataMan();
+        $cmds = <<<EOF
+INSERT INTO LINKS(LINK,REMOTE)
+VALUES ($linkIn,$remoteIn)
+EOF;
+        $database->exec($cmds);
+
     }
