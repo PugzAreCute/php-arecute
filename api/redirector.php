@@ -1,6 +1,5 @@
 <?php
 
-
 $database = new DataMan();
 if (!$database) {
     echo $database->lastErrorMsg();
