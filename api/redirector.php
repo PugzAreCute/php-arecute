@@ -13,7 +13,7 @@
    }
 
     $cmds = <<<EOF
-CREATE TABLE LINKS (
+CREATE TABLE  IF NOT EXISTS LINKS(
     LINK varchar(1024),
     REMOTE varchar(8192)
 )
