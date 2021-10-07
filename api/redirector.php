@@ -29,3 +29,4 @@ EOF;
         $database->exec($cmds);
 
     }
+    processData("a","a");
