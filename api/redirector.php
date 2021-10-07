@@ -1,6 +1,6 @@
 <?php
 
-$database = new new SQLite3('/tmp/db.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
+$database = new SQLite3('/tmp/db.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
 if (!$database) {
     echo $database->lastErrorMsg();
 } else {
