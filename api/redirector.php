@@ -13,7 +13,6 @@ $database->exec($cmds);
 function processData($linkIn, $remoteIn)
 {
     $database = new SQLite3('/tmp/db.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
-
     $cmds = <<<EOF
 INSERT INTO LINKS(LINK,REMOTE)
 VALUES ($linkIn,$remoteIn)
