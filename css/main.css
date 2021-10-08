@@ -71,3 +71,7 @@ code {
     padding: 1px;
     border: 1px solid #151515;
 }
+.fixed_list{
+    display: table;
+    margin: 0 auto;
+}
