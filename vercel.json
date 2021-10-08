@@ -20,10 +20,6 @@
       "src": "/(.*)",
       "status": 404,
       "dest": "404.html"
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "favicon.png"
     }
   ]
 }
