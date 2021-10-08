@@ -19,9 +19,9 @@
 </head>
 <body>
 <ul id="nav">
-    <li><a href="/">Home</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><a href="embed.html">Discord embed generator</a></li>
+    <li><a href="/" class="hidden_link">Home</a></li>
+    <li><a href="/contact" class="hidden_link">Contact</a></li>
+    <li><a href="embed.html" class="hidden_link">Discord embed generator</a></li>
 </ul>
 <?php
 $URLFORREDIRECT = $_GET['url'];
