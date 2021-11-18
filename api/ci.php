@@ -18,7 +18,7 @@ foreach ($parsedJSON_buildList->build as $curr){
     $buildcurl = curl_init();
     curl_setopt($buildcurl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($buildcurl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-    curl_setopt($buildcurl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds/id:".$curr->number."/artifacts/children");
+    curl_setopt($buildcurl, CURLOPT_URL, "https://argon.pugzarecute.com/guestAuth/app/rest/builds/id:".$curr->number."/artifacts/children");
     $buildArtifacts = json_decode(curl_exec($buildcurl));
     echo "<div><a href=\"https://argon.pugzarecute.com/".$buildArtifacts->file[0]->href."\"><button class=\"ci_build\">
     <h3>Build #".$curr->number."</h3>
