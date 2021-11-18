@@ -1,6 +1,6 @@
 <?php
 
-$database = new SQLite3('/tmp/db.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
+$database = new SQLite3('test.db', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
 
 $cmds = <<<EOF
 CREATE TABLE  IF NOT EXISTS LINKS(
@@ -12,7 +12,7 @@ EOF;
 $database->exec($cmds);
 function processData($linkIn, $remoteIn)
 {
-    $database = new SQLite3('/tmp/db.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
+    $database = new SQLite3('test.db', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
     $cmds = <<<EOF
 INSERT INTO LINKS(LINK,REMOTE)
 VALUES ($linkIn,$remoteIn)
