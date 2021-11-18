@@ -17,6 +17,10 @@
       "dest": "api/contact.php"
     },
     {
+      "src": "/ci",
+      "dest": "api/ci.php"
+    },
+    {
       "src": "/(.*)",
       "status": 404,
       "dest": "404.html"
