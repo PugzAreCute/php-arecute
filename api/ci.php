@@ -10,7 +10,7 @@
 <?php
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds?projectLocator=name:WoneWay");
+curl_setopt($curl, CURLOPT_URL, "https://argon.pugzarecute.com/guestAuth/app/rest/builds?projectLocator=name:WoneWay");
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
 $parsedJSON_buildList = json_decode (curl_exec($curl));
 //print_r( $parsedJSON->build);
