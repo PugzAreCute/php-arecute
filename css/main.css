@@ -28,7 +28,7 @@ ul li {
     text-align: left !important;
 }
 
-button {
+.ejen_button {
     width: 20%;
     height: 15%;
     background-color: darkslategray;

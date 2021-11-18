@@ -29,7 +29,7 @@ $URL = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $RUI = preg_replace("/&dnr=true/i", "", $_SERVER['REQUEST_URI']);
 $URL = preg_replace("/&dnr=true/i", "", $URL);
 echo "<h1 id='t2c'> Paste " . $URL . " In your favourite chat app that supports OG to preview this embed</h1>";
-echo '<button onclick="copyToClipboard(\'' . $URL . '\')">Copy text</button>';
+echo '<button class="ejen_button" onclick="copyToClipboard(\'' . $URL . '\')">Copy text</button>';
 ?>
 <br>
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../img/Vercel.svg"
