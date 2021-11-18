@@ -76,3 +76,11 @@ code {
     display: table;
     margin: 0 auto;
 }
+
+.ci_build{
+    background-color: #ff545b;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
