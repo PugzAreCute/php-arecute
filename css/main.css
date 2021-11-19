@@ -78,9 +78,15 @@ code {
 }
 
 .ci_build {
+    transition: transform .2s;
     background-color: #ff545b;
     border: 5px solid black;
     border-radius: 10px;
     width: 50%;
     margin: auto;
+}
+
+.ci_build:hover {
+    transform: scale(1.1);
+    background-color: #ff525a;
 }
