@@ -24,7 +24,7 @@ foreach ($parsedJSON_buildList->build as $curr) {
     echo "<div><a href=\"https://argon.pugzarecute.com/ci" . $buildArtifacts->file[0]->href . "\"><button class=\"ci_build\">
     <h3>Build #" . $curr->number . "</h3>
     <h4>Build status: " . $curr->status . "</h4>
-    <p>Artifact Info:<br>Size:" . $buildArtifacts->file[0]->size . "<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
+    <p>Artifact Info:<br>File name: ".$curr->file[0]->name."<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
 </button></a></div>";
 }
 ?>
