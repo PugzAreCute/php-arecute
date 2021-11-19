@@ -26,7 +26,6 @@ foreach ($parsedJSON_buildList->build as $curr) {
     <h4>Build status: " . $curr->status . "</h4>
     <p>Artifact Info:<br>Size:" . $buildArtifacts->file[0]->size . "<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
 </button></a></div>";
-    print_r($buildArtifacts->file);
 }
 ?>
 
