@@ -34,7 +34,7 @@ foreach ($parsedJSON_buildList->build as $curr) {
     curl_setopt($buildcurl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
     curl_setopt($buildcurl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds/id:" . $curr->id . "/artifacts/children");
     $buildArtifacts = json_decode(curl_exec($buildcurl));
-    echo "<div><a href=\"https://argon.pugzarecute.com/ci" . $buildArtifacts->file[0]->href . "\"><button class=\"ci_build\">
+    echo "<div><a href=\"https://argon.pugzarecute.com/ci" . $buildArtifacts->file[0]->content->href . "\"><button class=\"ci_build\">
     <h3>Build #" . $curr->number . "</h3>
     <h4>Build status: " . $curr->status . "</h4>
     <p>Artifact Info:<br>File name: ".$buildArtifacts->file[0]->name."<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
