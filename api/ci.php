@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Pugsmods CI</title>
     <link href="../css/main.css" rel="stylesheet">
+
+    <meta content="Pugsmods CI" property="og:title">
+    <meta content="text/strings" property="og:type">
+    <meta content="https://www.pugzarecute.com/ci" property="og:url">
+    <meta content="This is the Pugsmods CI Server" property="og:description">
+    <meta content="" property="og:image">
+    <meta content="#9a67c7" name="theme-color">
 </head>
 <body>
+<ul id="nav">
+    <li><a class="hidden_link" href="/">Home</a></li>
+    <li><a class="hidden_link" href="/contact">Contact</a></li>
+    <li><a class="hidden_link" href="embed.html">Discord embed generator</a></li>
+    <li><a class="hidden_link" href="/ci">CI</a></li>
+</ul>
 <h1>Click on a build card to download it.</h1>
 <?php
 error_reporting(0);
