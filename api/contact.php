@@ -2,10 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"></meta>
+    <meta charset="utf-8">
     <title>Contact me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-    <link href="../css/main.css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="stylesheet">
+
+    <meta content="Contact me!" property="og:title">
+    <meta content="text/strings" property="og:type">
+    <meta content="https://www.pugzarecute.com" property="og:url">
+    <meta content="Blah blah instructions on how to contact me!" property="og:description">
+    <meta content="" property="og:image">
+    <meta content="#9a67c7" name="theme-color">
 </head>
 
 <body>
