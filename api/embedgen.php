@@ -25,12 +25,12 @@
     <li><a class="hidden_link" href="/ci">CI</a></li>
 </ul>
 <?php
-$URLFORREDIRECT = $_GET['url'];
-$URL = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$RUI = preg_replace("/&dnr=true/i", "", $_SERVER['REQUEST_URI']);
-$URL = preg_replace("/&dnr=true/i", "", $URL);
-echo "<h1 id='t2c'> Paste " . $URL . " In your favourite chat app that supports OG to preview this embed</h1>";
-echo '<button class="ejen_button" onclick="copyToClipboard(\'' . $URL . '\')">Copy text</button>';
+$destination = $_GET['url'];
+$pageURL = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+$strippedURL = preg_replace("/&dnr=true/i", "", $_SERVER['REQUEST_URI']);
+$pageURL = preg_replace("/&dnr=true/i", "", $pageURL);
+echo "<h1 id='t2c'> Paste " . $pageURL . " In your favourite chat app that supports OG to preview this embed</h1>";
+echo '<button class="ejen_button" onclick="copyToClipboard(\'' . $pageURL . '\')">Copy text</button>';
 ?>
 <br>
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img src="../img/Vercel.svg"
@@ -38,13 +38,13 @@ echo '<button class="ejen_button" onclick="copyToClipboard(\'' . $URL . '\')">Co
 <script src="../js/utils.js"></script>
 <script>
     <?php
-    echo 'window.history.pushState("","","' . $RUI . '")'
+    echo 'window.history.pushState("","","' . $strippedURL . '")'
     ?>
 
     setTimeout(function () {
         <?php
         if (!isset($_GET["dnr"]) && isset($_GET['url']) && !empty($_GET['url'])) {
-            echo "location.replace('" . $URLFORREDIRECT . "')";
+            echo "location.replace('" . $destination . "')";
         }
         ?>
     }, 200);

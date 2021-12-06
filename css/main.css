@@ -77,6 +77,7 @@ code {
     margin: 0 auto;
 }
 
+/*Code for CI Cards.*/
 .ci_build {
     transition: transform .2s;
     background-color: #ff545b;
