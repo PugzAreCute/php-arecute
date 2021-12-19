@@ -39,7 +39,10 @@ foreach ($parsedJSON_buildList->build as $curr) {
     <h4>Build status: " . $curr->status . "</h4>
     <p>Artifact Info:<br>File name: ".$buildArtifacts->file[0]->name."<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
 </button></a></div>";
+
+    curl_close($buildcurl);
 }
+curl_close($curl)
 ?>
 
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img alt="Powered By Vercel!"
