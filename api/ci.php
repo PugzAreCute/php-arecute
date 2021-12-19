@@ -19,28 +19,34 @@
     <li><a class="hidden_link" href="embed.html">Discord embed generator</a></li>
     <li><a class="hidden_link" href="/ci">CI</a></li>
 </ul>
-<h1>Click on a build card to download it.</h1>
 <?php
 error_reporting(0);
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds?projectLocator=name:WoneWay");
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-$parsedJSON_buildList = json_decode(curl_exec($curl));
-//print_r( $parsedJSON->build);
-foreach ($parsedJSON_buildList->build as $curr) {
-    $buildcurl = curl_init();
-    curl_setopt($buildcurl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($buildcurl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-    curl_setopt($buildcurl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds/id:" . $curr->id . "/artifacts/children");
-    $buildArtifacts = json_decode(curl_exec($buildcurl));
-    echo "<div><a href=\"https://argon.pugzarecute.com/ci" . $buildArtifacts->file[0]->content->href . "\"><button class=\"ci_build\">
+curl_setopt($curl, CURLOPT_FAILONERROR, true);
+curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 10);
+$shouldContinueCurling = curl_exec($curl);
+if ($shouldContinueCurling === true) {
+    echo "<h1>Click on a build card to download it.</h1>";
+    $parsedJSON_buildList = json_decode($shouldContinueCurling);
+    foreach ($parsedJSON_buildList->build as $curr) {
+        $buildcurl = curl_init();
+        curl_setopt($buildcurl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($buildcurl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
+        curl_setopt($buildcurl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds/id:" . $curr->id . "/artifacts/children");
+        $buildArtifacts = json_decode(curl_exec($buildcurl));
+        echo "<div><a href=\"https://argon.pugzarecute.com/ci" . $buildArtifacts->file[0]->content->href . "\"><button class=\"ci_build\">
     <h3>Build #" . $curr->number . "</h3>
     <h4>Build status: " . $curr->status . "</h4>
-    <p>Artifact Info:<br>File name: ".$buildArtifacts->file[0]->name."<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
+    <p>Artifact Info:<br>File name: " . $buildArtifacts->file[0]->name . "<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>
 </button></a></div>";
 
-    curl_close($buildcurl);
+        curl_close($buildcurl);
+    }
+} else {
+    echo "<h1>Uh Oh! Looks Like The CI server is down. Please try again later.</h1>";
 }
 curl_close($curl)
 ?>
