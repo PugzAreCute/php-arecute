@@ -72,7 +72,7 @@ code {
     border: 1px solid #151515;
 }
 
-.fixed_list {
+.fixed_list{
     display: table;
     margin: 0 auto;
 }
