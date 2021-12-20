@@ -8,7 +8,7 @@
     <meta content="Pugsmods CI" property="og:title">
     <meta content="text/strings" property="og:type">
     <meta content="https://www.pugzarecute.com/ci" property="og:url">
-    <meta content="This is the Pugsmods CI Server" property="og:description">
+    <meta content="Pugsmods CI" property="og:description">
     <meta content="" property="og:image">
     <meta content="#9a67c7" name="theme-color">
 </head>
