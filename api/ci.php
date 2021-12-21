@@ -20,12 +20,11 @@
     <li><a class="hidden_link" href="/ci">CI</a></li>
 </ul>
 <?php
-error_reporting(0);
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds?projectLocator=name:WoneWay");
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 10);
+curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 5);
 $shouldContinueCurling = curl_exec($curl);
 if ($shouldContinueCurling == true) {
     echo "<h1>Click on a build card to download it.</h1>";
