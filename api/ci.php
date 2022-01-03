@@ -20,15 +20,15 @@
     <li><a class="hidden_link" href="/ci">CI</a></li>
 </ul>
 <?php
-$curl = curl_init();
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds?projectLocator=name:WoneWay");
-curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
-curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 5);
-$shouldContinueCurling = curl_exec($curl);
-if ($shouldContinueCurling == true) {
+$availableBuilds = curl_init();
+curl_setopt($availableBuilds, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($availableBuilds, CURLOPT_URL, "https://argon.pugzarecute.com/ci/guestAuth/app/rest/builds?projectLocator=name:WoneWay");
+curl_setopt($availableBuilds, CURLOPT_HTTPHEADER, array('Accept: application/json'));
+curl_setopt($availableBuilds, CURLOPT_CONNECTTIMEOUT, 5);
+$availableBuildsJson = curl_exec($availableBuilds);
+if ($availableBuildsJson == true) {
     echo "<h1>Click on a build card to download it.</h1>";
-    $parsedJSON_buildList = json_decode($shouldContinueCurling);
+    $parsedJSON_buildList = json_decode($availableBuildsJson);
     foreach ($parsedJSON_buildList->build as $curr) {
         $buildcurl = curl_init();
         curl_setopt($buildcurl, CURLOPT_RETURNTRANSFER, true);
@@ -56,7 +56,7 @@ if ($shouldContinueCurling == true) {
 } else {
     echo "<h1>Uh Oh! Looks Like The CI server is down. Please try again later.</h1>";
 }
-curl_close($curl)
+curl_close($availableBuilds)
 ?>
 
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img alt="Powered By Vercel!"
