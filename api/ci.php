@@ -44,7 +44,7 @@ if ($shouldContinueCurling == true) {
     <h4>Build status: " . $curr->status . "</h4>
     ";
     if ($curr->status == "SUCCESS"){
-        echo "<p>Artifact Info:<br>File name: " . $buildArtifacts->file[0]->name . "<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "</p>";
+        echo "<p>Artifact Info:<br>File name: " . $buildArtifacts->file[0]->name . "<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime . "<br>Branch: ".$curr->branchName."</p>";
     }
     echo "</button>";
     if ($curr->status == "SUCCESS"){
