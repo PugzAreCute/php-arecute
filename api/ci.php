@@ -42,7 +42,7 @@ if ($availableBuildsJson == true) {
         echo "<button class=\"ci_build\">
     <h3>Build #" . $curr->number . "</h3>
     <h4>Build status: " . $curr->status . "</h4>
-    <h4><strong>Branch: .".$curr->branchName."</strong></h4>
+    <h4><strong>Branch: ".$curr->branchName."</strong></h4>
     ";
     if ($curr->status == "SUCCESS"){
         echo "<p>Artifact Info:<br>File name: " . $buildArtifacts->file[0]->name . "<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime ."</p>";
