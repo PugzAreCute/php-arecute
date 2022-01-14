@@ -45,7 +45,7 @@ if ($availableBuildsJson == true) {
     <h4><strong>Branch: ".$curr->branchName."</strong></h4>
     ";
     if ($curr->status == "SUCCESS"){
-        echo "<p>Artifact Info:<br>File name: " . $buildArtifacts->file[0]->name . "<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . $buildArtifacts->file[0]->modificationTime ."</p>";
+        echo "<p>Artifact Info:<br>File name: " . $buildArtifacts->file[0]->name . "<br>Size:" . $buildArtifacts->file[0]->size . " bytes<br>Build Time: " . gmdate('r' ,strtotime($buildArtifacts->file[0]->modificationTime)) ."</p>";
     }
     echo "</button>";
     if ($curr->status == "SUCCESS"){
