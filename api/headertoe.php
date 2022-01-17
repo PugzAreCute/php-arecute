@@ -2,7 +2,7 @@
 if ($_SERVER['HTTP_X_START_SESSION'] == "TRUE"){
     $gamePath=substr(tempnam("/tmp","game-"),5);
     $fileGame = fopen("/tmp/".$gamePath,"w");
-    $randKey = openssl_random_pseudo_bytes(100);
+    $randKey = substr(tempnam("/tmp",""),5);
     fwrite($fileGame,$randKey."\n");
     header("x-security-key",$randKey);
     header("x-game-code", $gamePath);
