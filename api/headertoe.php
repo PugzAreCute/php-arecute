@@ -2,6 +2,7 @@
 if ($_SERVER['HTTP_X_START_SESSION'] == "TRUE"){
     $gamePath=substr(tempnam("/tmp","game-"),5);
     $fileGame = fopen("/tmp/".$gamePath,"w");
+    fwrite($fileGame,"Test===");
     fclose($fileGame);
     $fileGame = fopen("/tmp/".$gamePath,"r+");
     $randKey = substr(tempnam("/tmp",""),5);
