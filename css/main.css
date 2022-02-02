@@ -91,3 +91,49 @@ code {
     transform: scale(1.1);
     background-color: #ff525a;
 }
+.noselect {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.settings-icon{
+    transition: transform 500ms;
+    float:right;
+    position: fixed;
+    transform:scale(1.5);
+    right: 10px;
+    bottom: 10px;
+}
+
+.settings-icon:hover{
+    transform:scale(1.6) rotate(15deg)!important;
+    transition-duration: 500ms;
+}
+.settings_popup{
+    width: 15%;
+    background-color: #313030;
+    display: none;
+    float:right;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    border-radius:10px;
+}
+
+.settings_popup input{
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #3cbcad;
+}
+
+/*footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #020101;
+    width: 100%;
+    padding: 10px 0;
+}*/

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>PugsMods CI</title>
     <link href="../css/main.css" rel="stylesheet">
-
+    <script src="../js/ci.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta content="Pugsmods CI" property="og:title">
     <meta content="text/strings" property="og:type">
     <meta content="https://www.pugzarecute.com/ci" property="og:url">
@@ -59,8 +60,20 @@ if ($availableBuildsJson == true) {
 }
 curl_close($availableBuilds)
 ?>
-
 <a href="https://vercel.com/?utm_source=pugsmods&utm_campaign=oss"><img alt="Powered By Vercel!"
                                                                         src="../img/Vercel.svg"></a>
+<div class="settings_popup">
+    <h6>THIS IS NOT FUNCTIONAL. THIS SITE CURRENTLY DOES NOT USE ANY COOKIES</h6>
+    <label for="optionalcookies">Optional Cookies?</label>
+    <br>
+    <input type="checkbox" id="optionalcookies" name="optionalcookies">
+    <br>
+    <label for="cibuildno">CI Build Limit</label>
+    <br>
+    <input type="number" id="cibuildno" name="cibuildno" max="100" min="1">
+</div>
+<span unselectable="on" class="material-icons noselect settings-icon" onclick="openSettings()">
+settings
+</span>
 </body>
 </html>
